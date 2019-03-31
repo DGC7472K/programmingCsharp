@@ -23,7 +23,7 @@ namespace Triangle_2
             Console.WriteLine("Welcome!"); 
 
             // Inputs
-            Console.WriteLine("To make a triangle you need to measure three sides."); // Instructions
+            Console.WriteLine("To make a triangle you need to measure three sides"); // Instructions
             Console.WriteLine( );
 
             // Requesting numerical sides
@@ -42,20 +42,20 @@ namespace Triangle_2
             // Triangle Section
             if (a + b > c && b + c > a && c + a > b) // Triangle calculation
             {
-                Console.WriteLine("Congratuations! You have made a triangle."); // Message - notifies user if a triangle is made
+                Console.WriteLine("Congratuations! You have made a triangle"); // Message - notifies user if a triangle is made
             }
             else // If numbers do not calculate to make a triangle
             {
-                Console.WriteLine("Unfortunately, these sides do not make a triangle."); // Message - notifies user if a triangle is NOT made
+                Console.WriteLine("Unfortunately, these sides do not make a triangle"); // Message - notifies user if a triangle is NOT made
             }
             
             //Equalatral Triangle Section
             if (a == b && b == c && c == a) // Equation asking if all sides are equal
             {
-                Console.WriteLine("Equalateral triangle? Yes."); // Message - Confirming an equalateral triangle has been made
+                Console.WriteLine("Equalateral triangle? Yes"); // Message - Confirming an equalateral triangle has been made
             }
             else // If does not fit equation specifics
-                Console.WriteLine("Equalateral triangle? No."); // Message - Confirms sides do NOT make an equalateral triangle
+                Console.WriteLine("Equalateral triangle? No"); // Message - Confirms sides do NOT make an equalateral triangle
 
             // Right Angle Triangle Section
             if (a > b && a > c) // Calculation to see if 'a' is the longest side
@@ -78,55 +78,55 @@ namespace Triangle_2
             }
             if (rightAngle) // If a right angle has been made
             {
-                Console.WriteLine("Right angle triangle? Yes."); // Message - Notifies user shape is a right angle triangle
+                Console.WriteLine("Right angle triangle? Yes"); // Message - Notifies user shape is a right angle triangle
             }
             else
-                Console.WriteLine("Right angle triangle? No."); // Message - Notifies user shape is NOT a right angle triangle
+                Console.WriteLine("Right angle triangle? No"); // Message - Notifies user shape is NOT a right angle triangle
             
             // Isosceles Triangle Section
             if (a == b && a + b > c && b + c > a && c + a > b) // Check if sides 'a' and 'b' are equal and that still forms a triangle
             {
-                Console.WriteLine("Isosceles triangle? Yes."); 
+                Console.WriteLine("Isosceles triangle? Yes"); 
             }
 
             else if (b == c && a + b > c && b + c > a && c + a > b) // Check if sides 'b' and 'c' are equal and that still forms a triangle
             {
-                Console.WriteLine("Isosceles triangle? Yes.");
+                Console.WriteLine("Isosceles triangle? Yes");
             }
             else if (c == a && a + b > c && b + c > a && c + a > b) // Check if sides 'c' and 'a' are equal and that still forms a triangle
             {
-                Console.WriteLine("Isosceles triangle? Yes."); 
+                Console.WriteLine("Isosceles triangle? Yes"); 
             }
             else
-            Console.WriteLine("Isosceles triangle? No."); // Message - confirmation triangle is not an isosceles triangle
+            Console.WriteLine("Isosceles triangle? No"); // Message - confirmation triangle is not an isosceles triangle
 
             // Scalene Triangle Section
             if (a > b && b < c && c > a && a + b > c && b + c > a && c + a > b) // These equations check if all sides are unequal
             {
-                Console.WriteLine("Scalene triangle? Yes."); // Message - Confirms shape is scalene
+                Console.WriteLine("Scalene triangle? Yes"); // Message - Confirms shape is scalene
             }
             else if (b > c && c < a && a > b && a + b > c && b + c > a && c + a > b) // Check sides are unequal 1
             {
-                Console.WriteLine("Scalene triangle? Yes."); 
+                Console.WriteLine("Scalene triangle? Yes"); 
             }
             else if (c > a && a < b && b > c && a + b > c && b + c > a && c + a > b) // Check sides are unequal 2
             {
-                Console.WriteLine("Scalene triangle? Yes."); 
+                Console.WriteLine("Scalene triangle? Yes"); 
             }
             else if (a < b && b > c && c < a && a + b > c && b + c > a && c + a > b) // Check sides are unequal 3
             {
-                Console.WriteLine("Scalene triangle? Yes."); 
+                Console.WriteLine("Scalene triangle? Yes"); 
             }
             else if (b < c && c > a && a < b && a + b > c && b + c > a && c + a > b) // Check sides are unequal 4
             {
-                Console.WriteLine("Scalene triangle? Yes."); 
+                Console.WriteLine("Scalene triangle? Yes"); 
             }
             else if (c < a && a > b && b < c && a + b > c && b + c > a && c + a > b) // Check sides are unequal 5
             {
-                Console.WriteLine("Scalene triangle? Yes."); 
+                Console.WriteLine("Scalene triangle? Yes"); 
             }
             else // This confirms triangle has at least two sides the same
-                Console.WriteLine("Scalene triangle? No."); // Message - Confirms shape is NOT scalene
+                Console.WriteLine("Scalene triangle? No"); // Message - Confirms shape is NOT scalene
 
             Console.WriteLine( );
             Console.WriteLine("Please press any key to continue."); // Message instructing user how to exit program
